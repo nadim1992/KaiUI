@@ -1,0 +1,125 @@
+/**
+ * ===========================
+ * **************** Agenda ***
+ *
+ * 1. Basic
+ * 2. Fonts
+ * 3. Header
+ * ===========================
+ */
+
+
+
+/* ============== Basic ============== */
+#kui-app {
+    width: 100%;
+    height: 100%;
+    font-family: "Open Sans";
+}
+
+/* ============== Fonts ============== */
+.kui-h1 {
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.kui-h2 {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.kui-h3 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.kui-h4 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.kui-h5 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.kui-pri {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.kui-sec {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.kui-thi {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.kui-text {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.kui-link {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.kui-btn {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+/* ============== Fonts ============== */
+.header {
+    height: 28px;
+    line-height: 28px;
+    background-color: #320374;
+    color: #fff;
+    text-align: center;
+}
+
+.separator {
+    color: #6a6a6a;
+    height: 28px;
+    background-color: #e6e6e6;
+    line-height: 28px;
+    padding-left: 10px;
+}
+
+.software-key {
+    height: 30px;
+    background-color: #cccccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+}
+
+
+
+
+
+
+
+
+/*.center {
+    margin: auto;
+    display: block;
+}
+
+.btn-normal {
+    width: 220px;
+    height: 36px;
+    border-radius: 2px;
+    background: #ccc;
+    font-family: "Open Sans";
+    font-weight: normal;
+    font-size: 17px;
+    text-align: center;
+    color: #323232;
+    border: 0;
+}*/
