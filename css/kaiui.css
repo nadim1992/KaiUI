@@ -73,7 +73,7 @@
     font-weight: 400;
 }
 
-/* ============== Fonts ============== */
+/* ============== Header ============== */
 .kui-header {
     height: 28px;
     line-height: 28px;
@@ -82,6 +82,7 @@
     text-align: center;
 }
 
+/* ============== Separator ============== */
 .kui-separator {
     color: #6a6a6a;
     height: 28px;
@@ -90,6 +91,7 @@
     padding-left: 10px;
 }
 
+/* ============== Software key ============== */
 .kui-software-key {
     height: 30px;
     background-color: #cccccc;
@@ -100,12 +102,64 @@
     color: #323232;
 }
 
+/* ============== Toast ============== */
 .kui-toast {
     height: 36px;
     line-height: 36px;
     color: #fff;
+    text-align: center;
     background-color: #323232;
+}
+
+.kui-toast .kui-pri {
+    margin: 0;
+}
+
+.kui-toast-shadow {
+    height: 6px;
     background-image: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 100%);
+}
+
+/* ============== Lists ============== */
+
+.kui-list {
+    list-style: none;
+}
+
+.kui-list li {
+    background-color: #fff;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.kui-list li .kui-list-img {
+    width: 32px;
+    height: 32px;
+    border-radius: 10px;
+    background-color: #2f3235;
+    margin: 0 10px;
+}
+
+.kui-list-cont p {
+    margin: 4px 0;
+}
+
+.kui-list-cont .kui-pri {
+    color: #323232;
+}
+
+.kui-list-cont .kui-sec {
+    color: #6a6a6a;
+}
+
+.kui-list .kui-active {
+    background-color: #873eff;
+}
+
+.kui-active .kui-pri,
+.kui-active .kui-sec {
+    color: #fff;
 }
 
 
