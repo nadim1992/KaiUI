@@ -74,7 +74,7 @@
 }
 
 /* ============== Fonts ============== */
-.header {
+.kui-header {
     height: 28px;
     line-height: 28px;
     background-color: #320374;
@@ -82,7 +82,7 @@
     text-align: center;
 }
 
-.separator {
+.kui-separator {
     color: #6a6a6a;
     height: 28px;
     background-color: #e6e6e6;
@@ -90,13 +90,22 @@
     padding-left: 10px;
 }
 
-.software-key {
+.kui-software-key {
     height: 30px;
     background-color: #cccccc;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 5px;
+    color: #323232;
+}
+
+.kui-toast {
+    height: 36px;
+    line-height: 36px;
+    color: #fff;
+    background-color: #323232;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 100%);
 }
 
 
