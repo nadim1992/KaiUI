@@ -1,7 +1,7 @@
 # KaiUI
 Useful native UI components for KaiOS
 
-![Screenshot](https://raw.githubusercontent.com/nadim1992/KaiUI/develop/screenshot.png)
+![Screenshot](https://raw.githubusercontent.com/nadim1992/KaiUI/develop/screenshot-v1.png)
 
 ## Getting Started
 
