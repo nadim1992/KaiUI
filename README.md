@@ -1,5 +1,5 @@
 # KaiUI
-Useful native UI components for KaiOS :iphone: :beginner:
+Useful native UI components for KaiOS
 
 ## Getting Started
 
