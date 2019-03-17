@@ -28,12 +28,9 @@
     font-weight: 600;
 }
 
-.kui-h3 {
-    font-size: 14px;
-    font-weight: 400;
-}
-
-.kui-h4 {
+.kui-h3,
+.kui-h4,
+.kui-sec {
     font-size: 14px;
     font-weight: 400;
 }
@@ -43,33 +40,16 @@
     font-weight: 600;
 }
 
-.kui-pri {
+.kui-pri,
+.kui-text,
+.kui-btn,
+.kui-link {
     font-size: 17px;
-    font-weight: 400;
-}
-
-.kui-sec {
-    font-size: 14px;
     font-weight: 400;
 }
 
 .kui-thi {
     font-size: 12px;
-    font-weight: 400;
-}
-
-.kui-text {
-    font-size: 17px;
-    font-weight: 400;
-}
-
-.kui-link {
-    font-size: 17px;
-    font-weight: 700;
-}
-
-.kui-btn {
-    font-size: 17px;
     font-weight: 400;
 }
 
@@ -162,27 +142,50 @@
     color: #fff;
 }
 
+/* ============== Options menu ============== */
 
-
-
-
-
-
-
-/*.center {
-    margin: auto;
-    display: block;
+.kui-option-menu .kui-option-title {
+    margin: 0;
+    color: #323232;
+    text-align: center;
+    background-color: #d8d8d8;
+    height: 28px;
+    line-height: 28px;
 }
 
-.btn-normal {
+.kui-options {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.kui-options li {
+    height: 50px;
+    line-height: 50px;
+    padding-left: 10px;
+    background-color: #fff;
+}
+
+.kui-options .kui-active {
+    color: #fff;
+    background-color: #873eff;
+}
+
+/* ============== Button ============== */
+
+button.kui-btn {
     width: 220px;
     height: 36px;
     border-radius: 2px;
     background: #ccc;
-    font-family: "Open Sans";
-    font-weight: normal;
-    font-size: 17px;
     text-align: center;
     color: #323232;
     border: 0;
-}*/
+    display: block;
+    margin: auto;
+}
+
+button.kui-btn.kui-active {
+    color: #fff;
+    background-color: #873eff;
+}

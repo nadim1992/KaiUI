@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/kaiui.css">
         <style>
-            /* just for demo */
+            /* just for demo, please don't use this style block for production */
             body {
                 padding: 20px;
                 margin: 10px auto;
@@ -17,11 +17,11 @@
                 border-radius: 3px;
             }
 
-            ul {
+            ul, .kui-option-menu {
                 background: #e5e5e5;
                 padding: 10px;
             }
-            /* just for demo */
+            /* just for demo, please don't use this style block for production */
         </style>
     </head>
     <body>
@@ -46,7 +46,7 @@
 
             <!-- ============== Header ============== -->
 
-            <div class="kui-header">
+             <div class="kui-header">
                 <h1 class="kui-h1">Header</h1>
             </div>
 
@@ -111,6 +111,28 @@
                     </div>
                 </li>
             </ul>
+
+            <!-- ============== Option menu ============== -->
+
+            <div class="kui-option-menu">
+                <h2 class="kui-pri kui-option-title">Option Menu</h2>
+                <ul class="kui-options">
+                    <li>Option 1</li>
+                    <li>Option 2</li>
+                    <li class="kui-active">Option 3</li>
+                    <li>Option 4</li>
+                </ul>
+            </div>
+
+            <br>
+
+            <!-- ============== Option menu ============== -->
+
+            <button class="kui-btn">Button</button>
+
+            <br>
+
+            <button class="kui-btn kui-active">Button</button>
 
         </div> <!-- #app -->
 
