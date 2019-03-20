@@ -2,15 +2,25 @@
  * ===========================
  * **************** Agenda ***
  *
- * 1. Basic
- * 2. Fonts
- * 3. Header
+ *  1. Basic
+ *  2. Fonts
+ *  3. Header
+ *  4. Separator
+ *  5. Software key
+ *  6. Toast
+ *  7. Lists
+ *  8. Options menu
+ *  9. Button
+ * 10. Input
  * ===========================
  */
 
-
-
 /* ============== Basic ============== */
+h1, h2, h3, h4, h5, ul, p {
+    margin: 0;
+    padding: 0;
+}
+
 #kui-app {
     width: 100%;
     height: 100%;
@@ -101,7 +111,6 @@
 }
 
 /* ============== Lists ============== */
-
 .kui-list {
     list-style: none;
 }
@@ -133,17 +142,17 @@
     color: #6a6a6a;
 }
 
-.kui-list .kui-active {
+.kui-list li:focus {
     background-color: #873eff;
+    outline: 0;
 }
 
-.kui-active .kui-pri,
-.kui-active .kui-sec {
+.kui-list li:focus .kui-pri,
+.kui-list li:focus .kui-sec {
     color: #fff;
 }
 
 /* ============== Options menu ============== */
-
 .kui-option-menu .kui-option-title {
     margin: 0;
     color: #323232;
@@ -166,13 +175,13 @@
     background-color: #fff;
 }
 
-.kui-options .kui-active {
+.kui-options li:focus {
+    outline: 0;
     color: #fff;
     background-color: #873eff;
 }
 
 /* ============== Button ============== */
-
 button.kui-btn {
     width: 220px;
     height: 36px;
@@ -185,7 +194,49 @@ button.kui-btn {
     margin: auto;
 }
 
-button.kui-btn.kui-active {
+button.kui-btn:focus {
+    outline: 0;
     color: #fff;
     background-color: #873eff;
+}
+
+/* ============== Input ============== */
+.kui-input-holder {
+    height: 76px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.kui-input-holder:focus {
+    background-color: #873eff;
+    outline: 0;
+}
+
+.kui-input-label {
+    color: #323232;
+    display: block;
+    padding-bottom: 10px;
+}
+
+.kui-input-holder:focus .kui-input-label {
+    color: #fff;
+}
+
+.kui-input {
+    height: 36px;
+    width: 100%;
+    border-radius: 2px;
+    padding-left: 10px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #aaaaaa;
+}
+
+.kui-input ::-moz-placeholder,
+.kui-input :-moz-placeholder {
+    color: #323232;
+}
+
+.kui-input:focus {
+    outline: 0;
 }

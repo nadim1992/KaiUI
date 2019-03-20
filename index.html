@@ -13,12 +13,18 @@
                 padding: 20px;
                 margin: 10px auto;
                 max-width: 350px;
-                border: 3px solid #ffff00;
+                border: 2px solid #f57f17;
+                background: #b2dfdb;
                 border-radius: 3px;
             }
 
             ul, .kui-option-menu {
                 background: #e5e5e5;
+                padding: 10px;
+            }
+
+            #kui-app > h1, #kui-app > h2, #kui-app > h3, #kui-app > h4, #kui-app > h5, #kui-app > ul, #kui-app > p {
+                margin: 10px;
                 padding: 10px;
             }
             /* just for demo, please don't use this style block for production */
@@ -89,7 +95,7 @@
                         <p class="kui-sec">Secondary text</p>
                     </div>
                 </li>
-                <li class="kui-active">
+                <li>
                     <div class="kui-list-img"></div>
                     <div class="kui-list-cont">
                         <p class="kui-pri">Primary text</p>
@@ -119,23 +125,42 @@
                 <ul class="kui-options">
                     <li>Option 1</li>
                     <li>Option 2</li>
-                    <li class="kui-active">Option 3</li>
+                    <li>Option 3</li>
                     <li>Option 4</li>
                 </ul>
             </div>
 
             <br>
 
-            <!-- ============== Option menu ============== -->
+            <!-- ============== Button ============== -->
 
             <button class="kui-btn">Button</button>
 
             <br>
 
-            <button class="kui-btn kui-active">Button</button>
+            <button class="kui-btn">Button</button>
+
+            <br>
+
+            <!-- ============== Input ============== -->
+
+            <div class="kui-input-holder">
+                <label class="kui-input-label kui-h3">Label</label>
+                <input type="text" class="kui-input kui-text" placeholder="Input hint">
+            </div>
+            <div class="kui-input-holder">
+                <label class="kui-input-label kui-h3">Label</label>
+                <input type="text" class="kui-input kui-text" placeholder="Input hint">
+            </div>
 
         </div> <!-- #app -->
 
         <script src="js/kaiui.js"></script>
+        <script>
+            /* just for demo, please don't use this script block for production */
+            var btn = document.getElementsByTagName('button')[1];
+            btn.focus();
+            /* just for demo, please don't use this script block for production */
+        </script>
     </body>
 </html>
