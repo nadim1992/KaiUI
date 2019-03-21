@@ -207,7 +207,7 @@ button.kui-btn:focus {
     background-color: #fff;
 }
 
-.kui-input-holder:focus {
+.kui-input-holder:focus-within {
     background-color: #873eff;
     outline: 0;
 }
