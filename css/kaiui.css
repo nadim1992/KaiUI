@@ -63,6 +63,11 @@ h1, h2, h3, h4, h5, ul, p {
     font-weight: 400;
 }
 
+.kui-key-mid {
+    font-size: 16px;
+    font-weight: 700;
+}
+
 /* ============== Header ============== */
 .kui-header {
     height: 28px;
@@ -113,6 +118,7 @@ h1, h2, h3, h4, h5, ul, p {
 /* ============== Lists ============== */
 .kui-list {
     list-style: none;
+    overflow: hidden;
 }
 
 .kui-list li {
