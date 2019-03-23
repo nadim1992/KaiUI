@@ -21,10 +21,19 @@ h1, h2, h3, h4, h5, ul, p {
     padding: 0;
 }
 
+.statusbar-placeholder {
+    background-color: #320374;
+    height: 26px;
+}
+
 #kui-app {
     width: 100%;
     height: 100%;
     font-family: "Open Sans";
+}
+
+.content-area {
+    overflow: hidden;
 }
 
 /* ============== Fonts ============== */
@@ -66,6 +75,7 @@ h1, h2, h3, h4, h5, ul, p {
 .kui-key-mid {
     font-size: 16px;
     font-weight: 700;
+    text-transform: uppercase;
 }
 
 /* ============== Header ============== */
@@ -118,7 +128,6 @@ h1, h2, h3, h4, h5, ul, p {
 /* ============== Lists ============== */
 .kui-list {
     list-style: none;
-    overflow: hidden;
 }
 
 .kui-list li {
@@ -213,7 +222,7 @@ button.kui-btn:focus {
     background-color: #fff;
 }
 
-.kui-input-holder:focus-within {
+.kui-input-holder.kui-focus-within {
     background-color: #873eff;
     outline: 0;
 }
@@ -224,7 +233,7 @@ button.kui-btn:focus {
     padding-bottom: 10px;
 }
 
-.kui-input-holder:focus .kui-input-label {
+.kui-input-holder.kui-focus-within .kui-input-label {
     color: #fff;
 }
 
@@ -245,4 +254,18 @@ button.kui-btn:focus {
 
 .kui-input:focus {
     outline: 0;
+}
+
+/* KaiOS portrait devices (240x320) */
+@media only screen and (orientation : portrait) {
+    .content-area {
+        height: 236px;
+    }
+}
+
+/* KaiOS landscape devices (320x240) */
+@media screen and (orientation: landscape) {
+    .content-area {
+        height: 156px;
+    }
 }
