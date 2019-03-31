@@ -12,6 +12,7 @@
  *  8. Options menu
  *  9. Button
  * 10. Input
+ * 11. Table
  * ===========================
  */
 
@@ -34,6 +35,15 @@ h1, h2, h3, h4, h5, ul, p {
 
 .content-area {
     overflow: hidden;
+    position: relative;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0, .7);
+    position: absolute;
+    display: none;
 }
 
 /* ============== Fonts ============== */
@@ -75,6 +85,7 @@ h1, h2, h3, h4, h5, ul, p {
 .kui-key-mid {
     font-size: 16px;
     font-weight: 700;
+    text-align: center;
     text-transform: uppercase;
 }
 
@@ -101,10 +112,21 @@ h1, h2, h3, h4, h5, ul, p {
     height: 30px;
     background-color: #cccccc;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 0 5px;
     color: #323232;
+}
+
+.kui-software-key h5 {
+    width: 33.3333333333%;
+}
+
+.kui-software-key h5:first-child {
+    text-align: left;
+}
+
+.kui-software-key h5:last-child {
+    text-align: right;
 }
 
 /* ============== Toast ============== */
@@ -135,6 +157,7 @@ h1, h2, h3, h4, h5, ul, p {
     height: 60px;
     display: flex;
     align-items: center;
+    padding: 0 10px;
 }
 
 .kui-list li .kui-list-img {
@@ -142,7 +165,7 @@ h1, h2, h3, h4, h5, ul, p {
     height: 32px;
     border-radius: 10px;
     background-color: #2f3235;
-    margin: 0 10px;
+    margin-right: 10px;
 }
 
 .kui-list-cont p {
@@ -168,6 +191,14 @@ h1, h2, h3, h4, h5, ul, p {
 }
 
 /* ============== Options menu ============== */
+.kui-option-menu {
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    bottom: 0;
+    display: none;
+}
+
 .kui-option-menu .kui-option-title {
     margin: 0;
     color: #323232;
@@ -181,6 +212,7 @@ h1, h2, h3, h4, h5, ul, p {
     list-style: none;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 .kui-options li {
@@ -256,10 +288,50 @@ button.kui-btn:focus {
     outline: 0;
 }
 
+/* ============== Table ============== */
+.kui-table,
+.kui-table th,
+.kui-table td {
+    border: 1px solid #320374;
+    border-collapse: collapse;
+}
+
+.kui-table {
+    width: 100%;
+}
+
+.kui-table thead {
+    background-color: #320374;
+    color: #fff;
+}
+
+.kui-table tr:focus {
+    outline: 0;
+    background-color: #873eff;
+    color: #fff;
+}
+
+.kui-table td {
+    width: 50%;
+    padding: 4px 5px;
+}
+
+.kui-table td:last-child {
+    text-align: right;
+}
+
 /* KaiOS portrait devices (240x320) */
 @media only screen and (orientation : portrait) {
     .content-area {
         height: 236px;
+    }
+
+    .kui-option-menu {
+        height: 178px;
+    }
+
+    .kui-options {
+        height: 150px;
     }
 }
 
@@ -268,4 +340,14 @@ button.kui-btn:focus {
     .content-area {
         height: 156px;
     }
+
+    .kui-option-menu {
+        height: 128px;
+    }
+
+    .kui-options {
+        height: 100px;
+    }
 }
+
+/*** The End ******/
