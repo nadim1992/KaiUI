@@ -2,17 +2,19 @@
  * ===========================
  * **************** Agenda ***
  *
- *  1. Basic
- *  2. Fonts
- *  3. Header
- *  4. Separator
- *  5. Software key
- *  6. Toast
- *  7. Lists
- *  8. Options menu
- *  9. Button
- * 10. Input
- * 11. Table
+ * 01. Basic
+ * 02. Alignment
+ * 03. Color
+ * 04. Font
+ * 05. Header
+ * 06. Separator
+ * 07. Software key
+ * 08. Toast
+ * 09. List
+ * 10. Options menu
+ * 11. Button
+ * 12. Input
+ * 13. Table
  * ===========================
  */
 
@@ -33,12 +35,12 @@ h1, h2, h3, h4, h5, ul, p {
     font-family: "Open Sans";
 }
 
-.content-area {
+.kui-content-area {
     overflow: hidden;
     position: relative;
 }
 
-.overlay {
+.kui-overlay {
     width: 100%;
     height: 100%;
     background: rgba(0,0,0, .7);
@@ -46,7 +48,57 @@ h1, h2, h3, h4, h5, ul, p {
     display: none;
 }
 
-/* ============== Fonts ============== */
+.kui-text-upcase {
+    text-transform: uppercase;
+}
+
+/* ============== Alignment ============== */
+.kui-text-left {
+    text-align: left;
+}
+
+.kui-text-center {
+    text-align: center;
+}
+
+.kui-text-right {
+    text-align: right;
+}
+
+/* ============== Color ============== */
+.kui-color-purple {
+    color: #8500dc;
+}
+
+.kui-color-rose {
+    color: #cd006f;
+}
+
+.kui-color-red {
+    color: #ff0e0e;
+}
+
+.kui-color-lime {
+    color: #6b9a23;
+}
+
+.kui-color-cyan {
+    color: #00b1b4;
+}
+
+.kui-color-blue {
+    color: #0071dd;
+}
+
+.kui-color-orange {
+    color: #ff4b00;
+}
+
+.kui-color-dark-gray {
+    color: #323232;
+}
+
+/* ============== Font ============== */
 .kui-h1 {
     font-size: 17px;
     font-weight: 300;
@@ -71,8 +123,7 @@ h1, h2, h3, h4, h5, ul, p {
 
 .kui-pri,
 .kui-text,
-.kui-btn,
-.kui-link {
+.kui-btn {
     font-size: 17px;
     font-weight: 400;
 }
@@ -82,11 +133,9 @@ h1, h2, h3, h4, h5, ul, p {
     font-weight: 400;
 }
 
-.kui-key-mid {
-    font-size: 16px;
+.kui-link {
+    font-size: 17px;
     font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
 }
 
 /* ============== Header ============== */
@@ -121,14 +170,6 @@ h1, h2, h3, h4, h5, ul, p {
     width: 33.3333333333%;
 }
 
-.kui-software-key h5:first-child {
-    text-align: left;
-}
-
-.kui-software-key h5:last-child {
-    text-align: right;
-}
-
 /* ============== Toast ============== */
 .kui-toast {
     height: 36px;
@@ -147,7 +188,7 @@ h1, h2, h3, h4, h5, ul, p {
     background-image: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 100%);
 }
 
-/* ============== Lists ============== */
+/* ============== List ============== */
 .kui-list {
     list-style: none;
 }
@@ -190,7 +231,7 @@ h1, h2, h3, h4, h5, ul, p {
     color: #fff;
 }
 
-/* ============== Options menu ============== */
+/* ============== Options Menu ============== */
 .kui-option-menu {
     width: 100%;
     position: absolute;
@@ -322,7 +363,7 @@ button.kui-btn:focus {
 
 /* KaiOS portrait devices (240x320) */
 @media only screen and (orientation : portrait) {
-    .content-area {
+    .kui-content-area {
         height: 236px;
     }
 
@@ -337,7 +378,7 @@ button.kui-btn:focus {
 
 /* KaiOS landscape devices (320x240) */
 @media screen and (orientation: landscape) {
-    .content-area {
+    .kui-content-area {
         height: 156px;
     }
 

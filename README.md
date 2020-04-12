@@ -1,32 +1,22 @@
-# KaiUI
+# KaiUI (v1.0.0)
 Useful native UI components for KaiOS
 
 ![Screenshot](https://raw.githubusercontent.com/nadim1992/KaiUI/develop/screenshot.png)
 
 ## Getting Started
 
-See index.html file content for usage.
-
-### Prerequisites
-
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
+Visit [KaiOS](https://developer.kaiostech.com)
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
 ```
-Give the example
+Include the css directory into your project.
 ```
 
-And repeat
+### Usage
 
 ```
-until finished
+See index.html file's content for usage.
 ```
 
 ## Built With
@@ -34,6 +24,7 @@ until finished
 * HTML
 * CSS
 * JavaScript
+* :heart:
 
 ## Author
 
