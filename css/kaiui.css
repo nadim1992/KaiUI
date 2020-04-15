@@ -15,6 +15,7 @@
  * 11. Button
  * 12. Input
  * 13. Table
+ * 14. Progress
  * ===========================
  */
 
@@ -32,7 +33,7 @@ h1, h2, h3, h4, h5, ul, p {
 #kui-app {
     width: 100%;
     height: 100%;
-    font-family: "Open Sans";
+    font-family: 'Open Sans';
 }
 
 .kui-content-area {
@@ -172,8 +173,8 @@ h1, h2, h3, h4, h5, ul, p {
 
 /* ============== Toast ============== */
 .kui-toast {
-    height: 36px;
-    line-height: 36px;
+    height: 42px;
+    line-height: 42px;
     color: #fff;
     text-align: center;
     background-color: #323232;
@@ -291,7 +292,9 @@ button.kui-btn:focus {
 /* ============== Input ============== */
 .kui-input-holder {
     height: 76px;
-    padding: 10px;
+    padding: 7px 10px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
     background-color: #fff;
 }
 
@@ -303,7 +306,7 @@ button.kui-btn:focus {
 .kui-input-label {
     color: #323232;
     display: block;
-    padding-bottom: 10px;
+    padding-bottom: 8px;
 }
 
 .kui-input-holder.kui-focus-within .kui-input-label {
@@ -359,6 +362,57 @@ button.kui-btn:focus {
 
 .kui-table td:last-child {
     text-align: right;
+}
+
+/* ============== Progress ============== */
+.progress {
+    height: 60px;
+    background: #fff;
+    padding: 10px 10px;
+    box-sizing: border-box;
+}
+
+.progress:focus .progress-label {
+    color: #fff;
+}
+
+.progress label {
+    color: #332233;
+    display: inline-block;
+    width: 100%;
+}
+
+.progress-label {
+    float: left;
+}
+
+.progress-value {
+    float: right;
+    padding-top: 3px;
+}
+
+.progress input {
+    width: 100%;
+    outline: none;
+    height: 5px;
+    border-radius: 3px;
+}
+
+.progress input::-moz-range-thumb {
+    cursor: pointer;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+}
+
+.progress input,
+.progress input::-moz-range-thumb,
+.progress input::-moz-range-progress,
+.progress input::-moz-range-track {
+    -moz-appearance: none;
+    appearance: none;
+    background: #873eff;
 }
 
 /* KaiOS portrait devices (240x320) */

@@ -14,7 +14,7 @@
                 margin: 10px auto;
                 max-width: 350px;
                 border: 2px solid #f57f17;
-                background: #00e5ff;
+                background: #b2ebf2;
                 border-radius: 3px;
             }
 
@@ -145,17 +145,28 @@
             <!-- ============== Input ============== -->
 
             <div class="kui-input-holder">
-                <label class="kui-input-label kui-h3">Label</label>
+                <label class="kui-input-label kui-h3">Name</label>
                 <input type="text" class="kui-input kui-text" placeholder="Input hint">
             </div>
             <div class="kui-input-holder">
-                <label class="kui-input-label kui-h3">Label</label>
-                <input type="text" class="kui-input kui-text" placeholder="Input hint">
+                <label class="kui-input-label kui-h3">Password</label>
+                <input type="password" class="kui-input kui-text" placeholder="Input hint">
+            </div>
+
+            <br>
+
+            <!-- ============== Progress ============== -->
+
+            <div class="progress progress_range">
+                <label for="">
+                    <span class="progress-label kui-pri">Range</span>
+                    <span class="progress-value kui-sec">7/10</span>
+                </label>
+                <input type="range" min="1" max="10" value="7">
             </div>
 
         </div> <!-- #app -->
 
-        <script src="js/kaiui.js"></script>
         <script>
             /* just for demo, please don't use this script block for production */
             var btn = document.getElementsByTagName('button')[1];

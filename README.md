@@ -19,6 +19,8 @@ Include the css directory into your project.
 See index.html file's content for usage.
 ```
 
+What about a silly [Demo App](https://github.com/nadim1992/legal-terms-kaios)
+
 ## Built With
 
 * HTML
@@ -29,5 +31,3 @@ See index.html file's content for usage.
 ## Author
 
 * **Jahidur Rahman Nadim** [GitHub](https://github.com/nadim1992)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
