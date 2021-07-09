@@ -31,3 +31,7 @@ What about a silly [Demo App](https://github.com/nadim1992/legal-terms-kaios)
 ## Author
 
 * **Jahidur Rahman Nadim** [GitHub](https://github.com/nadim1992)
+
+## License
+
+[CC0-1.0](./LICENSE)
