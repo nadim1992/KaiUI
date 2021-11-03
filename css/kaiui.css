@@ -417,6 +417,10 @@ button.kui-btn:focus {
 
 /* KaiOS portrait devices (240x320) */
 @media only screen and (orientation : portrait) {
+    .fullscreen-app .kui-content-area {
+        height: 262px;
+    }
+
     .kui-content-area {
         height: 236px;
     }
@@ -432,6 +436,10 @@ button.kui-btn:focus {
 
 /* KaiOS landscape devices (320x240) */
 @media screen and (orientation: landscape) {
+    .fullscreen-app .kui-content-area {
+        height: 182px;
+    }
+
     .kui-content-area {
         height: 156px;
     }
