@@ -1,4 +1,4 @@
-# KaiUI (v1.0.0)
+# KaiUI (v1.0.1)
 Useful native UI components for KaiOS
 
 ![Screenshot](https://raw.githubusercontent.com/nadim1992/KaiUI/develop/screenshot.png)

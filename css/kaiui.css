@@ -31,9 +31,9 @@ h1, h2, h3, h4, h5, ul, p {
 }
 
 #kui-app {
-    width: 100%;
-    height: 100%;
     font-family: 'Open Sans';
+    height: 100%;
+    width: 100%;
 }
 
 .kui-content-area {
@@ -42,11 +42,11 @@ h1, h2, h3, h4, h5, ul, p {
 }
 
 .kui-overlay {
-    width: 100%;
-    height: 100%;
     background: rgba(0,0,0, .7);
-    position: absolute;
     display: none;
+    height: 100%;
+    position: absolute;
+    width: 100%;
 }
 
 .kui-text-upcase {
@@ -102,12 +102,13 @@ h1, h2, h3, h4, h5, ul, p {
 /* ============== Font ============== */
 .kui-h1 {
     font-size: 17px;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .kui-h2 {
     font-size: 17px;
-    font-weight: 600;
+    font-style: italic;
+    font-weight: 400;
 }
 
 .kui-h3,
@@ -119,7 +120,7 @@ h1, h2, h3, h4, h5, ul, p {
 
 .kui-h5 {
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 300;
 }
 
 .kui-pri,
@@ -141,43 +142,44 @@ h1, h2, h3, h4, h5, ul, p {
 
 /* ============== Header ============== */
 .kui-header {
-    height: 28px;
-    line-height: 28px;
     background-color: #320374;
     color: #fff;
+    height: 28px;
+    line-height: 28px;
     text-align: center;
 }
 
 /* ============== Separator ============== */
 .kui-separator {
+    background-color: #e6e6e6;
     color: #6a6a6a;
     height: 28px;
-    background-color: #e6e6e6;
     line-height: 28px;
     padding-left: 10px;
 }
 
 /* ============== Software key ============== */
 .kui-software-key {
-    height: 30px;
-    background-color: #cccccc;
-    display: flex;
     align-items: center;
-    padding: 0 5px;
+    background-color: #cccccc;
     color: #323232;
+    display: flex;
+    height: 30px;
+    padding: 0 5px;
 }
 
 .kui-software-key h5 {
+    font-style: italic;
     width: 33.3333333333%;
 }
 
 /* ============== Toast ============== */
 .kui-toast {
+    background-color: #323232;
+    color: #fff;
     height: 42px;
     line-height: 42px;
-    color: #fff;
     text-align: center;
-    background-color: #323232;
 }
 
 .kui-toast .kui-pri {
@@ -185,8 +187,8 @@ h1, h2, h3, h4, h5, ul, p {
 }
 
 .kui-toast-shadow {
-    height: 6px;
     background-image: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 100%);
+    height: 6px;
 }
 
 /* ============== List ============== */
@@ -195,19 +197,19 @@ h1, h2, h3, h4, h5, ul, p {
 }
 
 .kui-list li {
-    background-color: #fff;
-    height: 60px;
-    display: flex;
     align-items: center;
+    background-color: #fff;
+    display: flex;
+    height: 60px;
     padding: 0 10px;
 }
 
 .kui-list li .kui-list-img {
-    width: 32px;
-    height: 32px;
-    border-radius: 10px;
     background-color: #2f3235;
+    border-radius: 10px;
+    height: 32px;
     margin-right: 10px;
+    width: 32px;
 }
 
 .kui-list-cont p {
@@ -234,68 +236,70 @@ h1, h2, h3, h4, h5, ul, p {
 
 /* ============== Options Menu ============== */
 .kui-option-menu {
-    width: 100%;
-    position: absolute;
-    overflow: hidden;
     bottom: 0;
     display: none;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
 }
 
 .kui-option-menu .kui-option-title {
-    margin: 0;
-    color: #323232;
-    text-align: center;
     background-color: #d8d8d8;
+    color: #323232;
     height: 28px;
     line-height: 28px;
+    margin: 0;
+    text-align: center;
 }
 
 .kui-options {
     list-style: none;
     margin: 0;
-    padding: 0;
     overflow: hidden;
+    padding: 0;
 }
 
 .kui-options li {
+    background-color: #fff;
     height: 50px;
     line-height: 50px;
     padding-left: 10px;
-    background-color: #fff;
 }
 
 .kui-options li:focus {
-    outline: 0;
-    color: #fff;
     background-color: #873eff;
+    color: #fff;
+    outline: 0;
 }
 
 /* ============== Button ============== */
 button.kui-btn {
-    width: 220px;
-    height: 36px;
-    border-radius: 2px;
-    background: #ccc;
-    text-align: center;
-    color: #323232;
+    background: #fff;
     border: 0;
+    border: 2px solid #8c8c8c;
+    border-radius: 18px;
+    color: #323232;
     display: block;
+    height: 36px;
     margin: auto;
+    text-align: center;
+    width: 220px;
 }
 
 button.kui-btn:focus {
-    outline: 0;
-    color: #fff;
     background-color: #873eff;
+    border-color: #873eff;
+    color: #fff;
+    outline: 0;
 }
 
 /* ============== Input ============== */
 .kui-input-holder {
-    height: 76px;
-    padding: 7px 10px;
+    background-color: #fff;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    background-color: #fff;
+    height: 76px;
+    padding: 7px 10px;
 }
 
 .kui-input-holder.kui-focus-within {
@@ -314,13 +318,13 @@ button.kui-btn:focus {
 }
 
 .kui-input {
-    height: 36px;
-    width: 100%;
+    border: 1px solid #aaaaaa;
     border-radius: 2px;
-    padding-left: 10px;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    border: 1px solid #aaaaaa;
+    height: 36px;
+    padding-left: 10px;
+    width: 100%;
 }
 
 .kui-input ::-moz-placeholder,
@@ -350,14 +354,14 @@ button.kui-btn:focus {
 }
 
 .kui-table tr:focus {
-    outline: 0;
     background-color: #873eff;
     color: #fff;
+    outline: 0;
 }
 
 .kui-table td {
-    width: 50%;
     padding: 4px 5px;
+    width: 50%;
 }
 
 .kui-table td:last-child {
@@ -366,10 +370,10 @@ button.kui-btn:focus {
 
 /* ============== Progress ============== */
 .progress {
-    height: 60px;
     background: #fff;
-    padding: 10px 10px;
     box-sizing: border-box;
+    height: 60px;
+    padding: 10px 10px;
 }
 
 .progress:focus .progress-label {
@@ -392,18 +396,18 @@ button.kui-btn:focus {
 }
 
 .progress input {
-    width: 100%;
-    outline: none;
-    height: 5px;
     border-radius: 3px;
+    height: 5px;
+    outline: none;
+    width: 100%;
 }
 
 .progress input::-moz-range-thumb {
-    cursor: pointer;
     border: 3px solid #fff;
     border-radius: 50%;
-    width: 13px;
+    cursor: pointer;
     height: 13px;
+    width: 13px;
 }
 
 .progress input,
